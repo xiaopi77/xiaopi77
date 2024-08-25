@@ -211,7 +211,7 @@ end
       DropShadow.BackgroundTransparency = 1.000
       DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
       DropShadow.Size = UDim2.new(1, 10, 1, 10)
-      DropShadow.Image = "rbxassetid://18930485323"--背景
+      DropShadow.Image = "16060333448"
       DropShadow.ImageColor3 = Color3.fromRGB(255,255,255)
       DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
@@ -402,57 +402,27 @@ end
       SBG.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, zyColor), ColorSequenceKeypoint.new(1.00, zyColor)}
       SBG.Rotation = 90
       SBG.Name = "SBG"
-      SBG.Parent = SB  
-      
-      --[[
+      SBG.Parent = SB
+    
+      TabBtnsL:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+        TabBtns.CanvasSize = UDim2.new(0, 0, 0, TabBtnsL.AbsoluteContentSize.Y + 18)
+      end)
       Open.Name = "Open"
       Open.Parent = dogent
-      Open.BackgroundColor3 = Color3.fromRGB(139, 0, 255)
+      Open.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
       Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
       Open.Size = UDim2.new(0, 61, 0, 32)
       Open.Font = Enum.Font.SourceSans
-      Open.Text = "King.Script/King"
-      Open.TextColor3 = Color3.fromRGB(139, 0, 255)
-      Open.TextSize = 15.000
+      Open.Text = "隐藏/打开"
+      Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+      Open.TextSize = 14.000
       Open.Active = true
       Open.Draggable = true
       Open.MouseButton1Click:Connect(function()
           Main.Visible = not Main.Visible
-          Open.Text=Main.Visible and "King.Script隐藏" or "King打开"
+          Open.Text=Main.Visible and "隐藏" or "打开"
       end)
-]]
-
-
--- Properties:
-
-Frame.Parent = dogent
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
-Frame.Size = UDim2.new(0, 50, 0, 50)
-Frame.BackgroundTransparency = 1.000
-
-UICorner.CornerRadius = UDim.new(0, 90)
-UICorner.Parent = Frame
-
-Open.Parent = Frame
-Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Open.BorderSizePixel = 0
-Open.Size = UDim2.new(0, 50, 0, 50)
-Open.Active = true
-Open.Draggable = true
-Open.Image = "rbxassetid://18942159845"
-Open.MouseButton1Click:Connect(function()
-  Main.Visible = not Main.Visible
-  Open.Image = Main.Visible and "rbxassetid://18941591417" or "rbxassetid://18930445827" --开关的图
-end)
-
-UICorner_2.CornerRadius = UDim.new(0, 90)
-UICorner_2.Parent = Open
-UIG.Parent = Open   
-
+      UIG.Parent = Open
       local window = {}
       function window.Tab(window, name, icon)
         local Tab = Instance.new("ScrollingFrame")
