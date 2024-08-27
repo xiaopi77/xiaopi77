@@ -121,10 +121,7 @@ function library.new(library, name,theme)
           v:Destroy()
         end
       end
--------------------------AL------------------------------
-ALTransparency = 0.8
-ALcolor = Color3.fromRGB(0, 0, 250)--字体颜色
--------------------------AL------------------------------
+
 if theme == 'dark' then
     MainColor = Color3.fromRGB(25, 25, 25)
     Background = Color3.fromRGB(25, 25, 25)
