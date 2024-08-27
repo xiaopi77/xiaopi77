@@ -25,7 +25,7 @@ function Ripple(obj)
 		local Ripple = Instance.new("ImageLabel")
 		Ripple.Name = "Ripple"
 		Ripple.Parent = obj
-		Ripple.BackgroundColor3 = Color3.fromRGB(139, 0, 255)
+		Ripple.BackgroundColor3 = Color3.fromRGB(95, 102, 114)
 		Ripple.BackgroundTransparency = 1.000
 		Ripple.ZIndex = 8
 		Ripple.Image = "rbxassetid://18941591417"
