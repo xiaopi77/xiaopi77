@@ -32,7 +32,7 @@ function Ripple(obj)
             Ripple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Ripple.BackgroundTransparency = 1.000
             Ripple.ZIndex = 8
-            Ripple.Image = "rbxassetid://16060333448"
+            Ripple.Image = "rbxassetid://2708891598"
             Ripple.ImageTransparency = 0.800
             Ripple.ScaleType = Enum.ScaleType.Fit
             Ripple.ImageColor3 = Color3.fromRGB(255, 255, 255)
@@ -153,7 +153,7 @@ if theme == 'dark' then
     Background = Color3.fromRGB(0, 0, 0)
     zyColor = Color3.fromRGB(10, 10, 10)
     beijingColor = Color3.fromRGB(105, 105, 105)
-    TextColor = Color3.fromRGB(255, 255, 255) --名字颜色
+    TextColor = Color3.fromRGB(0, 255, 0) --名字颜色
     interfaceTransparency = 0.600 --界面透明
     NameTransparency = 0  --名字透明
 else
