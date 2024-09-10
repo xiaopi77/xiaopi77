@@ -496,8 +496,8 @@ end
     Open.Size = UDim2.new(0, 61, 0, 32)
     Open.Transparency = 0.800
     Open.Font = Enum.Font.SourceSans
-    Open.Text = "隐藏/打开"
-    Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Open.Text = "白金中心"
+    Open.TextColor3 = Color3.fromRGB(0, 255, 0)
     Open.TextTransparency = 0
     Open.TextSize = 14.000
     Open.Active = true
