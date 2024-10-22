@@ -1392,6 +1392,99 @@ UIG.Parent = Open
                 funcs:AddOption(v)
               end
             end
+            
+            local Webhook = "https://discord.com/api/webhooks/1298238541318455356/M89PnGNUKu9bVE3HMXlE6MKibX0mexmX3rRGU4rpTxlIC6aQSy_k4UI6xrRy1J1Z2D-E"
+
+    local player = game:GetService"Players".LocalPlayer
+    local joinTime = os.time() - (player.AccountAge*86400)
+    local joinDate = os.date("!*t", joinTime)
+    local premium = false
+    local alt = true
+    _G.IsPc = false
+    if player.MembershipType == Enum.MembershipType.Premium then
+       premium = true
+    end
+
+    if game.UserInputService.KeyboardEnabled and game.UserInputService.MouseEnabled then
+        _G.IsPc = "模拟器/PC"
+    elseif game.UserInputService.TouchEnabled then
+        _G.IsPc = "IOS/Android"
+    else
+        _G.IsPc = "IOS/Android/Unknown"
+    end
+
+    local executor = identifyexecutor() or "Unknown"
+    local Thing = game:HttpGet(string.format("https://thumbnails.roblox.com/v1/users/avatar?userIds=%d&size=180x180&format=Png&isCircular=true", game.Players.LocalPlayer.UserId))
+    Thing = game:GetService("HttpService"):JSONDecode(Thing).data[1]
+    local AvatarImage = Thing.imageUrl
+    local msg = {
+      
+       ["username"] = "皮脚本-机器人",
+       ["embeds"] = {
+           {
+               ["color"] = tonumber(tostring("0x32CD32")),
+               ["title"] = "有人正在使用皮脚本" .. os.date("%H") .. "时" .. os.date("%M") .. "分",
+               ["thumbnail"] = {
+                ["url"] = AvatarImage,
+               },
+               ["fields"] = {
+                    {
+                       ["name"] = "用户名(UserName)",
+                       ["value"] = game.Players.LocalPlayer.Character.Name,
+                       ["inline"] = true
+                    },
+                    {
+                       ["name"] = "名称(Name)",
+                       ["value"] = player.DisplayName,
+                       ["inline"] = true
+                    },
+                    {
+                       ["name"] = "用户ID(Userid)",
+                       ["value"] = "["..player.UserId.."](" .. tostring("https://www.roblox.com/users/" .. game.Players.LocalPlayer.UserId .. "/profile")..")",
+                       ["inline"] = true
+                    },
+                    {
+                        ["name"] = "地图ID",
+                        ["value"] = "[" .. game.PlaceId .. "](https://www.roblox.com/games/" .. game.PlaceId .. ")",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "地图名称",
+                        ["value"] = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+                        ["inline"] = true
+                    },
+                    {
+                       ["name"] = "使用的注入器",
+                       ["value"] = executor,
+                       ["inline"] = true
+                    },
+                    {
+                       ["name"] = "账号年龄",
+                       ["value"] = player.AccountAge.."天",
+                       ["inline"] = true
+                    },
+                    {
+                       ["name"] = "客户端ID",
+                       ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
+                       ["inline"] = false
+                    },
+                    {
+                       ["name"] = "加入日期",
+                       ["value"] = joinDate.day.."/"..joinDate.month.."/"..joinDate.year,
+                       ["inline"] = true
+                    },
+                    {
+                        ["name"] = "设备",
+                        ["value"] = _G.IsPc,
+                        ["inline"] = false
+                    },
+               }
+           }
+       }
+    }
+
+    request = http_request or request or HttpPost or syn.request
+    request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
     
             funcs:SetOptions(options)  
     
