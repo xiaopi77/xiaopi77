@@ -8388,7 +8388,7 @@ ag(an.UIElements.Main,0.35,{Position=UDim2.new(0.5,0,0.5,0)},Enum.EasingStyle.Qu
 an:Dialog{
 
 Title="是否关闭此脚本",
-Content="请选择下方按钮 是还是不是 ^ω^",
+Content="请选择下方按钮 是或不是 ^ω^",
 Buttons={
 {
 Title="不是",
