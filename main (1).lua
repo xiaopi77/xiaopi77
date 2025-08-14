@@ -122,7 +122,7 @@ warn("[ WindUI: 调试方式 ] "..m)
 
 return i.WindUI:Notify{
 Title="皮脚本",
-Content="UI加载成功",
+Content="错误",
 Duration=3,
 }
 end
