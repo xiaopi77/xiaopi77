@@ -120,8 +120,6 @@ p, r=m:find":%d+: "
 
 warn("[ WindUI: 调试方式 ] "..m)
 
-end
-
 function i.SetTheme(j)
 i.Theme=j
 i.UpdateTheme(nil,true)
