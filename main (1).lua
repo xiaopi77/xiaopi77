@@ -91,6 +91,9 @@ Grey="#484848",
 
 
 
+function i.Init(j)
+i.WindUI=j
+end
 
 
 function i.AddSignal(j,l)
@@ -117,6 +120,13 @@ p, r=m:find":%d+: "
 
 warn("[ WindUI: 调试方式 ] "..m)
 
+return i.WindUI:Notify{
+Title="皮脚本",
+Content="错误",
+Duration=3,
+}
+end
+end
 
 function i.SetTheme(j)
 i.Theme=j
