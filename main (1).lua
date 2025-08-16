@@ -91,9 +91,6 @@ Grey="#484848",
 
 
 
-function i.Init(j)
-i.WindUI=j
-end
 
 
 function i.AddSignal(j,l)
@@ -119,6 +116,7 @@ p, r=m:find":%d+: "
 
 
 warn("[ WindUI: 调试方式 ] "..m)
+
 
 function i.SetTheme(j)
 i.Theme=j
