@@ -120,12 +120,6 @@ p, r=m:find":%d+: "
 
 warn("[ WindUI: 调试方式 ] "..m)
 
-return i.WindUI:Notify{
-Title="皮脚本",
-Content="错误",
-Duration=3,
-}
-end
 end
 
 function i.SetTheme(j)
