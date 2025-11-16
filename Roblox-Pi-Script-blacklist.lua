@@ -1,6 +1,6 @@
 return {
     -- 用户名
-    ["用户名"] = true,
+    ["myt33996677"] = true,--司马小学生瞎甩
     ["用户名"] = true,
     ["用户名"] = true,
     ["用户名"] = true,
@@ -19,7 +19,7 @@ return {
     ["用户名"] = true,
     ["用户名"] = true,
     -- HWID
-    ["HWID"] = true,
+    ["48de6142dd7bf15fc6685090ef4c9d2987fe9d7dc1031ea06b6c05a8525defda"] = true,
     ["HWID"] = true,
     ["HWID"] = true,
     ["HWID"] = true,
