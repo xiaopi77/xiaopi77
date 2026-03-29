@@ -17,7 +17,7 @@ return {
         notification = "叶脚本作者 [player] 加入服务器"
     },
     
-    ["dsafaac"] = {
+    ["CYYNBNBN"] = {
         title = "长夜月",
         chatMessage = "欢迎皮脚本VIP用户进入服务器",
         notification = "皮脚本VIP用户 [player] 加入服务器"
