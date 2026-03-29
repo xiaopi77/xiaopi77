@@ -21,7 +21,7 @@ return {
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         showOtherTitle = true,
-        receiveWelcomeMsg = false,
+        receiveWelcomeMsg = true,
         receiveNotification = true
     },
     ["dsafaac"] = {
