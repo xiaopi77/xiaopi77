@@ -16,6 +16,14 @@ return {
         receiveWelcomeMsg = false,
         receiveNotification = true
     },
+        ["wzhxil"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        showOtherTitle = true,
+        receiveWelcomeMsg = false,
+        receiveNotification = true
+    },
     ["dsafaac"] = {
         title = "长夜月",
         welcomeMsg = "😍欢迎美丽的长夜月进入服务器",
