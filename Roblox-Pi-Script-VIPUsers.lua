@@ -5,7 +5,7 @@ return {
         notification = "皮脚本作者: [player] 加入服务器",
         -- 权限设置（可选，默认为true）
         showOtherTitle = true,        -- 是否显示其他VIP用户的头衔
-        receiveWelcomeMsg = true,     -- 是否接收其他VIP的欢迎消息
+        receiveWelcomeMsg = false,     -- 是否接收其他VIP的欢迎消息
         receiveNotification = true    -- 是否接收其他VIP的通知
     },
     ["xiaopi91"] = {
