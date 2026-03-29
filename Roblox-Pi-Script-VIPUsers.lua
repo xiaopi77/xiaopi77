@@ -2,26 +2,16 @@ return {
     ["xiaopi333"] = {
         title = "皮脚本作者",
         welcomeMsg = "👑欢迎皮脚本作者: [player] 加入服务器！",
-        notification = "皮脚本作者: [player] 加入服务器",
-        -- 控制当前VIP用户自己看到/接收其他VIP加入时的行为
-        showOtherTitle = true,        -- 是否显示其他VIP用户的头衔
-        receiveWelcomeMsg = false,     -- 是否接收其他VIP加入时的欢迎消息
-        receiveNotification = true    -- 是否接收其他VIP加入时的通知
+        notification = "皮脚本作者: [player] 加入服务器"
     },
     ["wzhxil"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
-        notification = "皮脚本作者 [player] 加入服务器",
-        showOtherTitle = true,
-        receiveWelcomeMsg = true,
-        receiveNotification = true
+        notification = "皮脚本作者 [player] 加入服务器"
     },
-    ["dsafaac"] = {
+    ["CYYNBNBN"] = {
         title = "长夜月",
-        welcomeMsg = "😍欢迎美丽的长夜月进入服务器",
-        notification = "温柔可爱长夜月已进入服务器",
-        showOtherTitle = false,        -- 不显示其他VIP头衔
-        receiveWelcomeMsg = true,      -- 接收其他VIP的欢迎消息
-        receiveNotification = false    -- 不接收其他VIP的通知
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "温柔可爱长夜月已进入服务器"
     }
 }
