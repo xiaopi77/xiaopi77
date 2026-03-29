@@ -9,7 +9,7 @@ return {
         welcomeMsg = "👑欢迎皮脚本作者: [player] 加入服务器！",
         notification = "皮脚本作者 [player] 加入服务器"
     },
-    ["wzhxil"] = {
+    ["wzhxIl"] = {
         title = "VIP",
         welcomeMsg = "欢迎VIP",
         notification = "VIP"
