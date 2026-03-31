@@ -3,7 +3,7 @@ return {
         title = "皮脚本作者",
         welcomeMsg = "👑欢迎皮脚本作者: [player] 加入服务器！",
         notification = "皮脚本作者: [player] 加入服务器",
-        visibleToOtherVIPs = true,      -- 是否让其他VIP用户看到此用户的头衔
+        visibleToOtherVIPs = false,      -- 是否让其他VIP用户看到此用户的头衔
         receiveWelcomeMsgs = false,      -- 是否接收其他VIP用户的欢迎消息
         receiveNotifications = false     -- 是否接收其他VIP用户的通知
     },
