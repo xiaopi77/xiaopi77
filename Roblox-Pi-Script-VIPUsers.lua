@@ -46,6 +46,14 @@ return {
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
+    },     
+    ["yangjuxi1949"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
     },
          ["gao520l"] = {
         title = "落叶HUB作者",
@@ -59,7 +67,8 @@ return {
         title = "云脚本作者",
         welcomeMsg = "欢迎云脚本作者: [player] 加入服务器！",
         notification = "云脚本作者 [player] 加入服务器",
-        visibleToOtherVIPs = true,
+        visibleToOtherVIPs = 
+        true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
     },
