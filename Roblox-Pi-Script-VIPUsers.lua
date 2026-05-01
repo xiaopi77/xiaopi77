@@ -120,7 +120,7 @@ return {
         receiveNotifications = true
     },
              ["Hudson_From4"] = {
-        title = "云脚本作者",
+        title = "XAHub作者",
         welcomeMsg = "欢迎云脚本作者: [player] 加入服务器！",
         notification = "云脚本作者 [player] 加入服务器",
         visibleToOtherVIPs = 
@@ -128,9 +128,8 @@ return {
         receiveWelcomeMsgs = false,
         receiveNotifications = true
     },
-                 ["chinawerui"] = {
+    ["chinawerui"] = {
         title = "叶脚本作者",
-        welcomeMsg = "欢迎叶脚本作者: [player] 加入服务器！",
         notification = "叶脚本作者 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
