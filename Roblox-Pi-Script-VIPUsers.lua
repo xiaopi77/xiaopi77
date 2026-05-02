@@ -160,7 +160,7 @@ return {
         receiveNotifications = true
     },
     ["noob13997856983"] = {
-        title = "皮脚本VIP用户",
+        title = "幼儿园大班",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
