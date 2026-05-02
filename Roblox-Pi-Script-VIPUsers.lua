@@ -40,8 +40,8 @@ return {
         receiveNotifications = true
     },
     ["shenmo159"] = {
-        title = "皮脚本VIP用户",
-        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        title = "何意味",
+        welcomeMsg = "欢迎 [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
@@ -184,8 +184,8 @@ return {
         receiveNotifications = true
     },
     ["qwergood98"] = {
-        title = "皮脚本VIP用户",
-        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        title = "bk贴身杯子",
+        welcomeMsg = "欢迎 [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
