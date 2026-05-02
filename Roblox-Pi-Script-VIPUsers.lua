@@ -129,8 +129,8 @@ return {
     },
              ["Hudson_From4"] = {
         title = "XAHub作者",
-        welcomeMsg = "欢迎云脚本作者: [player] 加入服务器！",
-        notification = "云脚本作者 [player] 加入服务器",
+        welcomeMsg = "欢迎XAHub作者: [player] 加入服务器！",
+        notification = "XAHub作者 [player] 加入服务器",
         visibleToOtherVIPs = 
         true,
         receiveWelcomeMsgs = false,
