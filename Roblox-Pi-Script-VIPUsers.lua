@@ -96,7 +96,7 @@ return {
         receiveNotifications = true
     },
     ["78vs91v"] = {
-        title = "皮脚本VIP用户",
+        title = "大帝境强者",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
