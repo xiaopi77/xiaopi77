@@ -7,7 +7,7 @@ return {
         receiveWelcomeMsgs = false,
         receiveNotifications = false
     },
-    ["78lwq23"] = {
+    ["78lwq29"] = {
         title = "皮脚本作者女朋友",
         welcomeMsg = "👑欢迎皮脚本作者女朋友: [player] 加入服务器！",
         notification = "皮脚本作者女朋友: [player] 加入服务器",
