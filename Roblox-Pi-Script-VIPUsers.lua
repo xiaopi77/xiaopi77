@@ -7,6 +7,14 @@ return {
         receiveWelcomeMsgs = false,
         receiveNotifications = false
     },
+    ["Km_known001"] = {
+        title = "皮脚本作者",
+        welcomeMsg = "👑欢迎皮脚本作者: [player] 加入服务器！",
+        notification = "皮脚本作者: [player] 加入服务器",
+        visibleToOtherVIPs = false,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = false
+    },    
     ["78lwq29"] = {
         title = "皮脚本作者女朋友",
         welcomeMsg = "👑欢迎皮脚本作者女朋友: [player] 加入服务器！",
