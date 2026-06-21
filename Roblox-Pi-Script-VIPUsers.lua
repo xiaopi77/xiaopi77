@@ -48,9 +48,9 @@ return {
         receiveNotifications = true
     },
     ["qsawpmzmb91"] = {
-        title = "皮脚本VIP用户",
-        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
-        notification = "皮脚本VIP用户 [player] 加入服务器",
+        title = "小皮专属杯子",
+        welcomeMsg = "欢迎小皮专属杯子: [player] 加入服务器！",
+        notification = "小皮专属杯子 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
@@ -318,15 +318,15 @@ return {
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
-    },    
-    ["g8klpfgw"] = {
+    },
+        ["Gazecvoez"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
-    },    
+    },
     ["CH789891"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
