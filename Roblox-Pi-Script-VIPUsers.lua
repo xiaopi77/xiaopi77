@@ -136,7 +136,7 @@ return {
         receiveNotifications = true
     },
     ["Ferrari250GTO_2013"] = {
-        title = "皮脚本VIP用户",
+        title = "小涂真纪",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
