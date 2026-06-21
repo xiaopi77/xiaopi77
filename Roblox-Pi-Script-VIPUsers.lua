@@ -135,6 +135,14 @@ return {
         receiveWelcomeMsgs = false,
         receiveNotifications = true
     },
+    ["Ferrari250GTO_2013"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
     ["gao520l"] = {
         title = "落叶HUB作者",
         welcomeMsg = "欢迎落叶HUB作者: [player] 加入服务器！",
