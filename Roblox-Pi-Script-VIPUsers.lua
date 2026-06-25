@@ -336,7 +336,7 @@ return {
         receiveNotifications = true
     },
         ["Gazecvoez"] = {
-        title = "皮脚本VIP用户",
+        title = "皮脚本VIP小猪猪",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
