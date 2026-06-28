@@ -305,6 +305,14 @@ return {
     },
     ["dy87816"] = {
         title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP [player]，非常荣幸与您相遇",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["chbdjv830013"] = {
+        title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
