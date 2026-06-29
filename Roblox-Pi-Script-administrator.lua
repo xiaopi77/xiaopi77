@@ -6,5 +6,7 @@ return {
     "ajs1145140",
     "Gazecvoez",
     "Km_known001",
+    "EOVXO1",
+    "LOEOVX",
     "xiaopi333"
 }
