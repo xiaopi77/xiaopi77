@@ -8,7 +8,7 @@ return {
     ["owsksjsiwks"] = true,
     ["7891V54"] = true,
     ["mgdyaj"] = true,
-    
+    ["FNMBSH"] = true,
     -- ========== 用户名（有原因） ==========
     ["jhhuuiyuyhh"] = "傻B玩意你转你妈呢",
     ["用户名"] = "原因",
@@ -21,7 +21,7 @@ return {
     ["4d6aaad34c1eb5c5e917239eeca4393ebc5e3e10aaf2f323f17949f61c049f7c"] = true,
     ["84c7f5f27f5cb425ee479df23c132588f1897495e1703cf559de6a36aa1f5fc6"] = true,
     ["e7ad538dfade7c93698dc0751b8810714b78deda67f1e11a4bf6194ac593e09c"] = true,
-    
+    ["0200c66d2d234602ed307877093a49516b863e5b115d8751456a30f6f9c3cd47"] = true,
     -- ========== HWID（有原因） ==========
     ["HWID"] = "原因",
     ["HWID"] = "原因",
