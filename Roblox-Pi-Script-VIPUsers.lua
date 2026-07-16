@@ -88,9 +88,9 @@ return {
         receiveNotifications = true
     },
     ["ajs1145140"] = {
-        title = "皮脚本VIP用户",
-        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
-        notification = "皮脚本VIP用户 [player] 加入服务器",
+        title = "皮脚本管理员",
+        welcomeMsg = "欢迎皮脚本管理员: [player] 加入服务器！",
+        notification = "皮脚本管理员 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
@@ -176,9 +176,9 @@ return {
         receiveNotifications = true
     },
     ["CYYNBNBN"] = {
-        title = "皮脚本管理",
-        welcomeMsg = "欢迎皮脚本管理: [player] 加入服务器！",
-        notification = "皮脚本管理 [player] 加入服务器",
+        title = "皮脚本管理员",
+        welcomeMsg = "欢迎皮脚本管理员: [player] 加入服务器！",
+        notification = "皮脚本管理员 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
@@ -343,7 +343,7 @@ return {
         receiveWelcomeMsgs = false,
         receiveNotifications = true
     },
-        ["Gazecvoez"] = {
+    ["Gazecvoez"] = {
         title = "皮脚本VIP小猪猪",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
@@ -355,6 +355,30 @@ return {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["aqswdefrz6"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["xubsu93"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["KS_xmr"] = {
+        title = "皮脚本管理员",
+        welcomeMsg = "欢迎皮脚本管理员: [player] 加入服务器！",
+        notification = "皮脚本管理员 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
