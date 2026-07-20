@@ -13,5 +13,7 @@ return {
     "Km_known001",
     "EOVXO1",
     "LOEOVX",
+    "yangjuxi1949",
+    "yangjuxi1945",
     "xiaopi333"
 }
