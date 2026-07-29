@@ -14,7 +14,7 @@ return {
         visibleToOtherVIPs = false,
         receiveWelcomeMsgs = false,
         receiveNotifications = false
-    },    
+    },
     ["78lwq29"] = {
         title = "皮脚本作者女朋友",
         welcomeMsg = "👑欢迎皮脚本作者女朋友: [player] 加入服务器！",
@@ -222,15 +222,15 @@ return {
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
-    },    
+    },
     ["bbhabya"] = {
-        title = "皮脚本VIP用户",
-        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
-        notification = "皮脚本VIP用户 [player] 加入服务器",
+        title = "皮脚本管理员",
+        welcomeMsg = "欢迎皮脚本管理员: [player] 加入服务器！",
+        notification = "皮脚本管理员 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
-    },       
+    },
     ["liushijie16"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
@@ -238,7 +238,7 @@ return {
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
-    },       
+    },
     ["baicl145333"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
@@ -246,7 +246,7 @@ return {
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
-    },       
+    },
     ["aaabbbccc12385"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
@@ -254,7 +254,7 @@ return {
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
-    },      
+    },
     ["yangjuxi1945"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
@@ -303,7 +303,7 @@ return {
         receiveWelcomeMsgs = false,
         receiveNotifications = true
     },
-        ["dvffghbksk"] = {
+    ["dvffghbksk"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
@@ -311,7 +311,7 @@ return {
         receiveWelcomeMsgs = false,
         receiveNotifications = true
     },
-        ["7878nb76"] = {
+    ["7878nb76"] = {
         title = "皮脚本VIP用户",
         welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
         notification = "皮脚本VIP用户 [player] 加入服务器",
@@ -419,6 +419,30 @@ return {
         title = "皮脚本管理员",
         welcomeMsg = "欢迎皮脚本管理员: [player] 加入服务器！",
         notification = "皮脚本管理员 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["hgklhgjjh"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["MUV_886"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["loopvr9"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
