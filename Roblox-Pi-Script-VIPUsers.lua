@@ -446,5 +446,53 @@ return {
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
+    },
+    ["DS2722636"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["SBg613777"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["qazxsw1685"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["ycivt66"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["nslz19"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
+    },
+    ["sunjirongwcnm2"] = {
+        title = "皮脚本VIP用户",
+        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
+        notification = "皮脚本VIP用户 [player] 加入服务器",
+        visibleToOtherVIPs = true,
+        receiveWelcomeMsgs = false,
+        receiveNotifications = true
     }
 }
