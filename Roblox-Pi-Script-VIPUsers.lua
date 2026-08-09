@@ -232,9 +232,9 @@ return {
         receiveNotifications = true
     },
     ["liushijie16"] = {
-        title = "皮脚本VIP用户",
-        welcomeMsg = "欢迎皮脚本VIP用户: [player] 加入服务器！",
-        notification = "皮脚本VIP用户 [player] 加入服务器",
+        title = "皮脚本管理员",
+        welcomeMsg = "欢迎皮脚本管理员: [player] 加入服务器！",
+        notification = "皮脚本管理员 [player] 加入服务器",
         visibleToOtherVIPs = true,
         receiveWelcomeMsgs = false,
         receiveNotifications = true
